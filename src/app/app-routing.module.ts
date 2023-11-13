@@ -100,6 +100,21 @@ const routes: Routes = [
     path: 'perfil-all',
     loadChildren: () => import('./perfiles/perfil-all/perfil-all.module').then( m => m.PerfilAllPageModule)
   },
+  {
+    path: 'proximamente',
+    loadChildren: () => import('./home/proximamente/proximamente.module').then( m => m.ProximamentePageModule)
+  },
+  {
+    path: 'empezar-a-comprar',
+    loadChildren: () => import('./home/empezar-a-comprar/empezar-a-comprar.module').then( m => m.EmpezarAComprarPageModule)
+  },
+  {
+    path: 'panel-admin',
+    loadChildren: () => import('./login/panel-admin/panel-admin.module').then( m => m.PanelAdminPageModule)
+  },
+
+
+
   
   
 

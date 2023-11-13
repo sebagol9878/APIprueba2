@@ -1,8 +1,16 @@
+/* Agrega tus reglas CSS existentes aquí */
+
 .content-grid {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+ion-fab {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 100px; /* Ajusta este valor según sea necesario para evitar superposiciones */
+  z-index: 999; /* Ajusta el z-index según sea necesario */
 }
 
 .row {
@@ -17,11 +25,8 @@
   padding: 1rem;
 }
 
-.toolbar-container{
+.toolbar-container {
   background-color: white;
 }
 
-
-
-
-
+/* Puedes seguir agregando más reglas CSS si es necesario */

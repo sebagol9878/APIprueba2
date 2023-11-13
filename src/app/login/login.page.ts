@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController, ToastController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -33,7 +32,6 @@ export class LoginPage {
     }
   }
 
-
   async showToast(message: string) {
     const toast = await this.toastCtrl.create({
       message: message,
@@ -44,13 +42,18 @@ export class LoginPage {
   }
 
   crearCuenta() {
-    this.showToast('Bienvenidos a bazar RadaL, Cree su cuenta gratis aqui');
-
+    this.showToast('Bienvenidos a bazar RadaL, Cree su cuenta gratis aquí');
     this.router.navigate(['/register']);
   }
 
   olvidasteContrasena() {
-   
-    this.navCtrl.navigateForward(['/resetpass']); 
+    this.navCtrl.navigateForward(['/resetpass']);
   }
+
+  // login.page.ts
+
+accederComoAdministrador() {
+  this.router.navigate(['/panel-admin']);
+}
+
 }

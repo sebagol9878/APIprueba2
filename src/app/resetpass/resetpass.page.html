@@ -1,5 +1,15 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="regresarAlLogin()">
+        <!-- Puedes usar ion-icon o img aquí para tu logo -->
+        <!-- Ejemplo con ion-icon -->
+        <ion-icon name="arrow-back"></ion-icon>
+        
+        <!-- Ejemplo con img -->
+        <!-- <img src="ruta/al/logo.png" alt="Logo"> -->
+      </ion-button>
+    </ion-buttons>
     <ion-title>Recuperar Contraseña</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -7,7 +17,7 @@
 <ion-content [fullscreen]="true">
   <div class="ion-padding">
     <h2>¿Olvidaste tu contraseña?</h2>
-    <p> Ingresa tu correo electrónico para recibir un enlace de recuperación</p>
+    <p>Ingresa tu correo electrónico para recibir un enlace de recuperación</p>
 
     <ion-item>
       <ion-label position="stacked">Correo Electrónico</ion-label>
